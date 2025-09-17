@@ -1,0 +1,54 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+/* -------------------------
+   Part 1: CSS Transitions
+-------------------------- */
+#hoverBtn {
+  padding: 12px 24px;
+  background: royalblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#hoverBtn:hover {
+  background: darkblue;
+  transform: scale(1.1);
+}
+
+/* -------------------------
+   Part 3: Animated Box
+-------------------------- */
+#animatedBox {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  border-radius: 8px;
+  transition: transform 1s ease, background 1s ease;
+}
+
+/* Class triggered by JS */
+.move {
+  transform: translateY(150px) rotate(45deg);
+  background: mediumseagreen;
+}
+
+/* -------------------------
+   Bonus: Keyframes Example
+-------------------------- */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); background: gold; }
+  100% { transform: scale(1); }
+}
+
+.pulsing {
+  animation: pulse 1s infinite;
+}
